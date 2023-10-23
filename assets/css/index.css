@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Hanken;
+}
+
+@font-face {
+    font-family: Hanken;
+    src: url(/assets/fonts/static/HankenGrotesk-Medium.ttf);
+}
+
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+}
+
+#div1 {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-align: center;
+    color: white;
+    border-radius: 20px 20px 20px 20px;
+    padding: 20px;
+    max-width: 300px;
+}
+
+#div2 {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    row-gap: 10px;
+    margin: 20px;
+    padding: 40px;
+}
+
+.circle {
+    background-color: blue;
+    margin: 20px auto 20px auto;
+    width: 130px;
+    padding: 40px;
+    border-radius: 50%;
+    background-image: linear-gradient( hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+
+/* mobile settings */
+
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+    #div1 {
+        border-radius: 0px 0px 20px 20px;
+    }
+}
+
+.rectangle {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px; */
+    width: 100%;
+    /* border-style: groove; */
+    border-radius: 8px;
+    column-gap: 60px;
+    align-items: center;
+    padding: 10px;
+}
+
+.divflex {
+    display: flex;
+}
+
+.reaction-bg {
+    background-color: hsl(0, 100%, 67%, 0.05);
+}
+
+.reaction-text {
+    color: red;
+    font-weight: bold;
+}
+
+.memory-bg {
+    background-color: hsl(39, 100%, 56%, 0.05);
+}
+
+.memory-text {
+    color: hsl(39, 100%, 56%);
+    font-weight: bold;
+}
+
+.verbal-bg {
+    background-color: hsl(166, 100%, 37%, 0.05);
+}
+
+.verbal-text {
+    color: hsl(166, 100%, 37%);
+    font-weight: bold;
+}
+
+.visual-bg {
+    background-color: hsl(234, 85%, 45%, 0.05);
+}
+
+.visual-text {
+    color: hsl(234, 85%, 45%);
+    font-weight: bold;
+}
+
+.ind-result {
+    font-weight: bold;
+}
+
+
+/* ### Primary
+
+- Light red: hsl(0, 100%, 67%)
+- Orangey yellow: hsl(39, 100%, 56%)
+- Green teal: hsl(166, 100%, 37%)
+- Cobalt blue: hsl(234, 85%, 45%) */
+
+.bold {
+    font-weight: bold;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: hsl(224, 30%, 27%);
+    cursor: pointer;
+    color: aliceblue;
+}
